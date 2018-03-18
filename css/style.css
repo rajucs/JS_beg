@@ -1,0 +1,22 @@
+/*menu icon bar  start*/
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #272822;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 3px);
+    transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -4px);
+    transform: rotate(45deg) translate(-5px, -4px);
+}
+
+/*menu icon bar end*/
+
+
+#productcontent1{
+	padding: 10px 10px 10px 10px;
+}

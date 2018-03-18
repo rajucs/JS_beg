@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style="">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-info text-center">First Program</h3>
+            <button type="button" class="btn btn-primary" onclick="firstprogram()" value="Hello World">Hello world</button>
+           
+            <button class="btn btn-primary" onclick="alert('are you sure you want to destroy your house?')" value="Confirmation Alert">Confirmation Alert</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-info text-center">operator</h3>
+            <button type="button" class="btn btn-primary" onclick="operator()" value="Operator">Operator</button>
+            <h3 class="text-info text-center">Variable</h3>
+            <button type="button" class="btn btn-danger" onclick="variableexmpl()" value="variable">Variable</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jumbotron">
+              <h3 class="text-info text-center">Conditional Statement</h3>
+              <button type="button" class="btn btn-success" onclick="popup()" value="popup">Pop Up</button>
+              <button type="button" class="btn btn-success" onclick="ifstatement()" value="If statement">If statement</button>
+              <button type="button" class="btn btn-primary" onclick="ifelsestatement()" value="If Else">If Else</button>
+              
+            </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-center text-info">Loop Example</h3>
+            <button type="button" class="btn btn-primary" onclick="whileloop()" value="while loop">while loop</button>
+            <button type="button" class="btn btn-primary" onclick="forloop()" value="For loop">for loop</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-center text-info">Array</h3>
+            <button type="button" class="btn btn-success" onclick="arrayexmpl()" value="Array"> Array</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-info text-center">JS confirmation alert</h3>
+            <button type="button" class="btn btn-warning" onclick="confirmationmsg()" value="stay with us?">Stay with us?</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-info text-center"> JS Prompt</h3>
+            <input type="button" class="btn btn-danger" onclick="jsprompt()" value="say my name">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron">
+            <h3 class="text-info text-center">js print function</h3>
+            <button type="button" class="btn btn-warning" onclick="window.print()">Print this page</button>
+          </div>
+        </div>
+
+       
+        <script type="text/javascript">
+          function firstprogram(){
+            var linebreak = "<br>"
+          document.write("Hello World!");
+          document.write(linebreak)
+
+          }
+          
+
+         function operator(){
+           // Arithmetic operator start
+
+          var two = 2
+          var ten = 10
+          document.write("2  + 10 = ")
+          var result = two + ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 - 10 =")
+          var result = two - ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 / 10 =")
+          var result = two / ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 % 10 = ")
+          var result = two % ten
+          document.write(result)
+          document.write(linebreak)
+
+          //comparison operator start
+
+          document.write("2 == 10 => ")
+          var result = two == ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 != 10 => ")
+          var result = two != ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 < 10 =>")
+          var result = two < ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 > 10 => ")
+          var result = two > ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 <= 10 (less than equal to) =>")
+          var result = two <= ten
+          document.write(result)
+          document.write(linebreak)
+
+          document.write("2 >= 10 ( greater than equal to) => ")
+          var result = two >= ten
+          document.write(result)
+          document.write(linebreak)
+         }
+
+          function variableexmpl(){
+            // variable example
+
+          var first = " <h4>this is first variable program for javascript</h4>"
+          document.write(first)
+          document.write(linebreak)
+
+          var second = " i am learning javascript"
+          document.write(second)
+          document.write(linebreak)
+          }
+
+          //javascript function & event  tutorial
+          function popup(){
+            alert("This is pop up example");
+          }
+          document.write(linebreak)
+
+          //function example with parameter
+
+          function getAddition(firstNumber,secondNumber,thirdNumber){
+            var result;
+            result = firstNumber + secondNumber - thirdNumber;
+            return result;
+          }
+          var myresult = getAddition(10,40,10);
+          alert(myresult);
+          document.write(linebreak)
+
+          //conditional statement
+          //if statement example
+          function ifstatement(){
+            var mynum = 7;
+            if (mynum == 7) {
+              document.write("This is lucky 7")
+            }
+          }
+          document.write(linebreak)
+
+          //if esle statement
+
+          function ifelsestatement(){
+            var mynumb1 = 7;
+            if (mynumb1 ==9) {
+              document.write("this is lucky 7");
+            }
+            else{
+              document.write("This is not actual valu");
+            }
+          }
+
+          //if if else else example
+
+          function ifelseif(){
+            var name = "oishi";
+            if (name == "riha") {
+              document.write("Sweat mamuni");
+            }
+            else if(name=="nazifa"){
+              document.write("another sweat mamuni");
+            }
+            else if(name =="oishi"){
+              document.write("lovely sweat mamuni");
+            }
+            else{
+              document.write("not selected anyone")
+            }
+          }
+
+          //while loop example
+
+         function whileloop(){
+           var x = 0;
+            var linebreak = "<br>";
+            document.write("while loop is begining");
+            document.write(linebreak);
+
+            while(x<10){
+              document.write("the value of x is = " +x);
+              document.write(linebreak);
+              x++;
+            }
+            document.write("while loop is finished");
+         }
+
+         function forloop(){
+          var i = 0;
+          var linebreak = "<br>";
+          document.write("The for loop is begining ");
+          document.write(linebreak);
+          for(i=0;i<=10;i++){
+            document.write("the vlue of i is =" +i);
+            document.write(linebreak);
+          }
+          document.write("the for loop is stop");
+         }
+
+         function arrayexmpl(){
+          var linebreak = "<br>";
+          var myArray = new Array();
+          myArray[0] = "India";
+          myArray[1] = "Bangladesh";
+          myArray[2] = "Srilanka";
+          document.write(myArray[0]+linebreak+myArray[1]+linebreak+myArray[2]);
+          document.write(linebreak);
+          document.write("<h4>Array sorting </h4>");
+          myArray.sort();
+          document.write(myArray[0]+linebreak+myArray[1]+linebreak+myArray[2]);
+         }
+
+         function confirmationmsg(){
+          var answer = confirm("stay with us?");
+          if(answer){
+            alert("Thanks for staying with us.")
+          }
+          else{
+            alert("good bye.Hope will right back soon! Thank You.")
+            window.location = "http://www.google.com";
+          }
+         }
+
+         function jsprompt(){
+          var reply = prompt("Hey there good looking stranger ! Whats your name?","")
+          alert("Nice to see you around this parts " + reply + "!");
+         }
+           
+          
+
+        </script>
+        <script type="text/javascript" src="js/vendor/jquery-3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script> -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
