@@ -19,24 +19,24 @@
 
         <!-- Add your site or application content here -->
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-info text-center">First Program</h3>
+          <div class="jumbotron text-center">
+            <h3 class="text-info ">First Program</h3>
             <button type="button" class="btn btn-primary" onclick="firstprogram()" value="Hello World">Hello world</button>
            
             <button class="btn btn-primary" onclick="alert('are you sure you want to destroy your house?')" value="Confirmation Alert">Confirmation Alert</button>
           </div>
         </div>
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-info text-center">operator</h3>
+          <div class="jumbotron text-center">
+            <h3 class="text-info ">operator</h3>
             <button type="button" class="btn btn-primary" onclick="operator()" value="Operator">Operator</button>
-            <h3 class="text-info text-center">Variable</h3>
+            <h3 class="text-info ">Variable</h3>
             <button type="button" class="btn btn-danger" onclick="variableexmpl()" value="variable">Variable</button>
           </div>
         </div>
         <div class="container-fluid">
-            <div class="jumbotron">
-              <h3 class="text-info text-center">Conditional Statement</h3>
+            <div class="jumbotron text-center">
+              <h3 class="text-info ">Conditional Statement</h3>
               <button type="button" class="btn btn-success" onclick="popup()" value="popup">Pop Up</button>
               <button type="button" class="btn btn-success" onclick="ifstatement()" value="If statement">If statement</button>
               <button type="button" class="btn btn-primary" onclick="ifelsestatement()" value="If Else">If Else</button>
@@ -45,34 +45,73 @@
         </div>
 
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-center text-info">Loop Example</h3>
+          <div class="jumbotron text-center">
+            <h3 class=" text-info">Loop Example</h3>
             <button type="button" class="btn btn-primary" onclick="whileloop()" value="while loop">while loop</button>
             <button type="button" class="btn btn-primary" onclick="forloop()" value="For loop">for loop</button>
           </div>
         </div>
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-center text-info">Array</h3>
+          <div class="jumbotron text-center">
+            <h3 class=" text-info">Array</h3>
             <button type="button" class="btn btn-success" onclick="arrayexmpl()" value="Array"> Array</button>
           </div>
         </div>
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-info text-center">JS confirmation alert</h3>
+          <div class="jumbotron text-center">
+            <h3 class="text-info ">JS confirmation alert</h3>
             <button type="button" class="btn btn-warning" onclick="confirmationmsg()" value="stay with us?">Stay with us?</button>
           </div>
         </div>
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-info text-center"> JS Prompt</h3>
+          <div class="jumbotron text-center">
+            <h3 class="text-info "> JS Prompt</h3>
             <input type="button" class="btn btn-danger" onclick="jsprompt()" value="say my name">
           </div>
         </div>
         <div class="container-fluid">
-          <div class="jumbotron">
-            <h3 class="text-info text-center">js print function</h3>
+          <div class="jumbotron text-center">
+            <h3 class="text-info ">js print function</h3>
             <button type="button" class="btn btn-warning" onclick="window.print()">Print this page</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron text-center">
+            <h3 class="text-info ">Redirect using JS</h3>
+            <button type="button" class="btn btn-success" onclick="redirect()" value="redirect">redirect</button>
+            <h3 class="text-info ">Time delay</h3>
+            <button type="button" class="btn btn-primary" onclick="setTimeout('timedelay()', 3000)" value="timedelay">Time delay</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron text-center">
+            <h3 class="text-info ">Pop Up window with size</h3>
+            <button type="button" class="btn btn-danger" onclick="popupwindow()">popUp window size</button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="jumbotron text-center ">
+            <h3 class="text-info">Date & time</h3>
+            <button onclick="currentdate()" class="btn btn-warning">click to view current date</button>
+            <h3 class="text-info">only current month view</h3>
+            <button type="button" class="btn btn-primary" onclick="onlymonth()">click to view month</button>
+            <h3 class="text-info">Hours & Minutes</h3>
+            <button type="button" class="btn btn-primary" onclick="onlyhrmin()">click to view</button>
+            <h3 class="text-info">Full date view</h3>
+            <button type="button" class="btn btn-warning" onclick="getfulldate()" >click to view FullDate</button>
+
+            <h3 class="text-danger">Js Time</h3>
+            <p>Some function list of Date object</p>
+            <ol class="text-left">
+              <li>getTime() - For count mili second since 1/1/1970 @12:00 am</li>
+              <li>getSeconds()- For count second (0-59)</li>
+              <li>getMinutes()- For count minutes (0-59)</li>
+              <li>getHours()- For count houres (0-23)</li>
+              <li>getDay()- For count week day(0-6) 0=sunday,.....,6=saturday</li>
+              <li>getDate()- For count month day(0-31)</li>
+              <li>getMonth()- For count month(0-11)</li>
+              <li>getFullYear()- For 4 digit year(1970- 1999)</li>
+            </ol>
           </div>
         </div>
 
@@ -146,7 +185,7 @@
 
           function variableexmpl(){
             // variable example
-
+          var linebreak = "<br>";
           var first = " <h4>this is first variable program for javascript</h4>"
           document.write(first)
           document.write(linebreak)
@@ -178,7 +217,7 @@
           function ifstatement(){
             var mynum = 7;
             if (mynum == 7) {
-              document.write("This is lucky 7")
+              alert("This is lucky 7")
             }
           }
           document.write(linebreak)
@@ -188,10 +227,10 @@
           function ifelsestatement(){
             var mynumb1 = 7;
             if (mynumb1 ==9) {
-              document.write("this is lucky 7");
+              alert("this is lucky 7");
             }
             else{
-              document.write("This is not actual valu");
+              alert("This is not actual valu");
             }
           }
 
@@ -200,16 +239,16 @@
           function ifelseif(){
             var name = "oishi";
             if (name == "riha") {
-              document.write("Sweat mamuni");
+              alert("Sweat mamuni");
             }
             else if(name=="nazifa"){
-              document.write("another sweat mamuni");
+              alert("another sweat mamuni");
             }
             else if(name =="oishi"){
-              document.write("lovely sweat mamuni");
+              alert("lovely sweat mamuni");
             }
             else{
-              document.write("not selected anyone")
+              alert("not selected anyone")
             }
           }
 
@@ -270,7 +309,48 @@
           alert("Nice to see you around this parts " + reply + "!");
          }
            
-          
+          function redirect(){
+            window.location = "http://www.google.com";
+          }
+          function timedelay(){
+            window.location = "http://www.google.com";
+          }
+          function popupwindow(){
+            window.open("http://www.google.com/","mywindow","status = 1, height=600,width=800,resizable=0");
+          }
+          function currentdate(){
+            var currentDate = new Date();
+            alert(currentDate);
+          }
+          function onlymonth(){
+            var currentDate = new Date();
+            var currentMonth = currentDate.getMonth() + 1;
+            alert(currentMonth);
+          }
+          function onlyhrmin(){
+            var currentDate = new Date();
+            var currentHour = currentDate.getHours();
+            var currentMinute= currentDate.getMinutes();
+            // alert(currentDate)
+            // document.write(currentHour);
+            document.write(currentHour + ":" + currentMinute + " ");
+            if(currentHour > 11){
+              document.write("PM")
+            }
+            else{
+              document.write("AM")
+            }
+          }
+
+          function getfulldate(){
+            var currentDate  = new Date();
+            var currentMonth = currentDate.getMonth()+1;
+            var currentDay   = currentDate.getDate();
+            var currentDays  = currentDate.getDay();
+            var currentYear  = currentDate.getFullYear();
+
+            document.write(currentMonth + "/" + currentDay + "/" + currentYear);
+          }
 
         </script>
         <script type="text/javascript" src="js/vendor/jquery-3.min.js"></script>
